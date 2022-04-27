@@ -1,0 +1,36 @@
+
+<div class="container">
+  <div>
+    <h2><img class ="photo" src="./assets/foto.jpg" height="50px" width="50px" alt="Tv">Tv Series
+    </h2>
+  </div>
+  <div class="col-6">
+    <table class="table">
+      <caption>Seasons average: <a>{{promedio}}</a></caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Channel</th>
+          <th>Seasons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of series">
+          <td>
+            <dd>{{c.id}}</dd>
+          </td>
+          <td>
+            <dd>{{c.name}}</dd>
+          </td>
+          <td>
+            <dd>{{c.channel}}</dd>
+          </td>
+          <td>
+            <dd>{{c.seasons}}</dd>
+          </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
